@@ -1,0 +1,95 @@
+:root {
+  --col-1: lime;
+  --col-2: teal;
+  --col-3: pink;
+  --col-4: yellow;
+  --speed: 2s;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  line-height: 1.4;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+}
+
+/* Page Colors */
+#page-1 {
+  background: var(--col-1);
+}
+#page-2 {
+  background: var(--col-2);
+}
+#page-3 {
+  background: var(--col-3);
+}
+#page-4 {
+  background: var(--col-4);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 0.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.page p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border: none;
+  background: #f4f4f4;
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover,
+.btn-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+.btn-dark:hover {
+  background: #f4f4f4;
+  color: #333;
+}
+
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: head var(--speed) forwards ease-in;
+}
+
+#page-1 p {
+  transform: translateX(-1200px);
+  animation: text var(--speed) forwards ease-in;
+}
+
+@keyframes head {
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes text {
+  to {
+    transform: translateX(0px);
+  }
+}
