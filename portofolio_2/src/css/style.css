@@ -1,0 +1,67 @@
+.bg-black {
+  background: #000;
+  color: #fff;
+}
+
+#main-header img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.2);
+}
+
+.main__img {
+  overflow: hidden;
+}
+
+#main-header .port-item {
+  width: 30%;
+}
+#main-header .port-item .fa {
+  font-size: 2em;
+}
+
+#main-header .port-item:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: 0.7rem;
+}
+
+footer p {
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.5rem;
+  color: rgb(201, 84, 185);
+}
+
+.card {
+  border-radius: 0;
+}
+
+  .rounded-circle {
+  margin-top: 0.6rem;
+}
+
+.icon {
+  margin: 0.4rem;
+  display: flex;
+}
+
+.icon:hover {
+  color: rgb(201, 84, 185);
+  cursor: pointer;
+}
+
+@media (min-width: 1199px) {
+  .port-item {
+    padding: 3em !important;
+  }
+}
